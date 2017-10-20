@@ -25,4 +25,4 @@ Game.StartLoop = function () {
 }
 
 console.log("Hi");
-Beachball.MainProgram();
+Game.MainProgram();
