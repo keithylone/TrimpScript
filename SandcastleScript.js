@@ -3,20 +3,23 @@
 var Game = {};
 
 
-//BB Audio Alerts Variables
 Game.Beep = new Audio("http://keithylone.github.io/beep.mp3");
-	BeachBall.Beep.volume = 1;
+	Game.Beep.volume = 1;
 
-Game.RKTimer = Molpy.Redacted.toggle - Molpy.Redacted.countup;
 
-Game.PlayRKAlert = function() {
-	
-	if (BeachBall.RKTimer == 0) {
-		BeachBall.Beep.play();
+Game.RedundaKitty = function() {
+	document.title = Molpy.Redacted.toggle - Molpy.Redacted.countup;
+	if (Molpy.Redacted.location > 0) {
+		Game.Beep.play();
 	}
-
 }
 
-if (Molpy.Redacted.location > 0) {
-	Game.PlayRKAlert();
+//Main Program and Loop
+function MainProgram() {
+	Game.RedundaKitty();
+	Game.StartLoop();
+}
+
+Game.StartLoop = function () {
+	Game.Timeout = setTimeout(MainProgram, 900);
 }
