@@ -23,3 +23,6 @@ function MainProgram() {
 Game.StartLoop = function () {
 	Game.Timeout = setTimeout(MainProgram, 900);
 }
+
+console.log("Hi");
+Beachball.MainProgram();
