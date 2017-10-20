@@ -3,7 +3,7 @@
 var Game = {};
 
 
-Game.Beep = new Audio("http://keithylone.github.io/beep.mp3");
+Game.Beep = new Audio("https://www.soundjay.com/button/beep-02.mp3");
 	Game.Beep.volume = 1;
 
 
