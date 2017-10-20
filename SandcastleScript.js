@@ -17,12 +17,12 @@ Game.RedundaKitty = function() {
 //Main Program and Loop
 function MainProgram() {
 	Game.RedundaKitty();
-	Game.StartLoop();
+	StartLoop();
 }
 
-Game.StartLoop = function () {
-	Game.Timeout = setTimeout(MainProgram, 900);
+StartLoop = function () {
+	setTimeout(MainProgram, 900);
 }
 
 console.log("Hi");
-Game.MainProgram();
+MainProgram();
