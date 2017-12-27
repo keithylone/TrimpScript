@@ -6,7 +6,7 @@ beeped = false;
 //Main Program and Loop
 function MainProgram() {
 	document.title = balanceStack.textContent; //Balance Stacks
-	if (balanceStack.textContent = "80") {
+	if (balanceStack.textContent == "80") {
 		if (beeped == false) {
 			Beep.play(); //beep beep beep
 			beeped = true;
