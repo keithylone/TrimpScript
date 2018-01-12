@@ -5,11 +5,12 @@ canBeep = false;
 
 //Main Program and Loop
 function MainProgram() {
-	document.title = decayStackCount.textContent; //Balance Stacks
-	if (decayStackCount.textContent == "149" || decayStackCount.textContent =="179") {
+	stacks = decayStackCount.textContent;
+	document.title = stacks; //Decay Stacks
+	if (stacks == "149" || stacks =="179" || stacks == "209" || stacks == "239") {
 		canBeep = true;
 	}
-	if (decayStackCount.textContent == "150" || decayStackCount.textContent == "180") {
+	if (stacks == "150" || stacks == "180" || stacks == "210" || stacks == "240") {
 		if (canBeep) {
 			Beep.play();
 			canBeep = false;
